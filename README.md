@@ -112,9 +112,7 @@ A API fornece os seguintes endpoints:
 ### Validação
 
 - title: obrigatório em POST, string, max 120.
-
 - content: opcional, string.
-
 - Campos não esperados no payload são removidos e/ou geram erro (global ValidationPipe com whitelist/forbidNonWhitelisted).
 
 ## 🧪 Testes Manuais Sugeridos
