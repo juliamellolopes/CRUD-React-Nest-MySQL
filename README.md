@@ -63,7 +63,7 @@ DB_USER=notes_user \\altere_para_sua_senha
 DB_PASS=notes_pass \\nome_do_banco
 ```
 
-4. Suba o banco de dados:
+4. Criar o banco de dados:
 
 ```bash
 CREATE DATABASE IF NOT EXISTS notes_db
