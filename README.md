@@ -94,8 +94,6 @@ npm run dev
 
 A API fornece os seguintes endpoints:
 
-### 🔐 Autenticação
-
 - `GET /notes`  
   Lista todas as notas, ordenadas por updatedAt (desc).
 
