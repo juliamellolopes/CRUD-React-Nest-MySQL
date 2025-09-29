@@ -66,7 +66,12 @@ DB_PASS=notes_pass \\nome_do_banco
 4. Suba o banco de dados:
 
 ```bash
-CREATE DATABASE notes_db;
+CREATE DATABASE IF NOT EXISTS notes_db
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS 'notes_user'@'%' IDENTIFIED BY 'notes_pass';
+GRANT ALL PRIVILEGES ON notes_db.* TO 'notes_user'@'%';
+FLUSH PRIVILEGES;
 ```
 
 5. Inicie a API:
