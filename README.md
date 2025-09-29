@@ -109,13 +109,13 @@ A API fornece os seguintes endpoints:
 - `DELETE /notes/:id`  
   Exclui uma nota.
 
-### 👤 Usuários
+### Validação
 
-- Os usuários cadastrados podem:
-  - Criar tarefas associadas a si mesmos.
-  - Ver apenas suas próprias tarefas.
-  - Editar e excluir suas tarefas.
+- title: obrigatório em POST, string, max 120.
 
+- content: opcional, string.
+
+- Campos não esperados no payload são removidos e/ou geram erro (global ValidationPipe com whitelist/forbidNonWhitelisted).
 
 ## 🧪 Testes Manuais Sugeridos
 
